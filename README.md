@@ -51,3 +51,6 @@ To create new branch and make it active :-
 To delete branch :-
 	first active any other branch
 	$ git branch -d <branch_name>
+	
+To Pull from rpo
+	$ git pull
