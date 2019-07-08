@@ -9,5 +9,8 @@ int main() {
 	cin >> number1 >> number2;
 	number3 = number1 + number 2;
 	cout << "\n" << number1 << " + " << number2 << " = " << number3 << endl;
+
+	cout << "First delete and get back" ;
+
 	return 0;
 }
