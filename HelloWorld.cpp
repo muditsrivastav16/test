@@ -12,5 +12,7 @@ int main() {
 
 	cout << "First delete and get back" ;
 
+	cout << "This is shown only in multi branch";
+
 	return 0;
 }
