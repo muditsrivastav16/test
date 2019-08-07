@@ -1,10 +1,19 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker { image 'maven:3.3.3' } }
+    agent {
+        node {
+            label 'Ubuntu'
+        }
+    }
+    
     stages {
-        stage('build') {
+        stage('compile') {
             steps {
-                sh 'mvn --version'
+                sh 'javac Demo.java'
+            }
+        }
+        stage('Run') {
+            steps {
+                sh 'java Demo Ubuntu'
             }
         }
     }
