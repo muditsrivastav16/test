@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('compile') {
             steps {
-                sh 'echo compiling'
+                sh 'javac Demo.java'
             }
         }
         stage('Run') {
             steps {
-                sh 'echo running'
+                sh 'java Demo Ubuntu'
             }
         }
     }
